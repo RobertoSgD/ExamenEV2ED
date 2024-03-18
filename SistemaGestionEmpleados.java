@@ -1,8 +1,16 @@
 import java.util.Scanner;
 
+/**
+ * Clase principal que gestiona la aplicación de gestión de empleados.
+ */
 public class SistemaGestionEmpleados {
 
-    public static void main(String[] args) {
+     /**
+     * Método principal que inicia la aplicación.
+     * 
+     * @param args Argumentos de línea de comandos (no utilizados en esta aplicación).
+     */
+        public static void main(String[] args) {
         Empleado[] empleados = new Empleado[3];
         empleados[0] = new Empleado("Juan", "Desarrollador", 50000);
         empleados[1] = new Empleado("María", "Diseñadora", 45000);
