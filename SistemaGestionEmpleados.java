@@ -11,12 +11,12 @@ public class SistemaGestionEmpleados {
         Empleados gestorEmpleados = new Empleados(empleados);
 
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Introduzca el porcentaje de aumento de salario: ");
+        System.out.print(Textos.PREGUNTA_PORCENTAJE_SALARIO);
         double porcentaje = scanner.nextDouble();
 
         gestorEmpleados.aumentarSalario(porcentaje);
         
-        System.out.println("Lista de Empleados:");
+        System.out.println(Textos.LISTA_EMPLEADOS);
         gestorEmpleados.mostrarEmpleados();
 
         scanner.close();
